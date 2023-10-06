@@ -1,0 +1,95 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    padding: 10px;
+  }
+  .outer {
+      border: 1px solid black;
+      width: 300px;
+      height: 300px;
+      margin-left: 10px;
+      position: relative;
+
+  }
+
+  .absolute {
+      background-color: black;
+      width: 100px;
+      height: 100px;
+      color: white;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .btn-control{
+  margin-top: 10px;
+    height: 100px;
+    position: relative;
+    width: 100px;
+
+  }
+
+  button{
+    position: absolute;
+    
+    border-radius: 3px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    border:2px solid black ;
+
+  }
+
+    
+ button:hover,button:active,button:focus {
+     opacity: 0.8;
+     background-color: #1d1c1c6e;
+ }
+
+  .btn-control button:first-child{
+   top: 35%;
+   left: -5%;
+    background-color: transparent;
+    transform: rotate(90deg);
+  }
+  .btn-control button:nth-child(2){
+    top: 35px;
+    left: 65%;
+    background-color: transparent;
+    transform: rotate(90deg);
+  }
+  .btn-control button:nth-child(3){ 
+    left: 30%;
+    background-color: transparent;
+  }
+  .btn-control button:nth-child(4){ 
+    left: 30%;
+    bottom: 0%;
+    background-color: transparent;
+  }
+
+  .btn-control button:nth-child(1) p{
+
+    transform: rotate(-90deg);
+  }
+  .btn-control button:nth-child(4) p{
+   transform: rotate(180deg);
+
+  }
